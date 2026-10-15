@@ -1,0 +1,35 @@
+{
+  "name": "movie-reccomedations-system",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:server": "npm --prefix server run dev",
+    "start:server": "npm --prefix server start",
+    "build": "vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "setup": "npm install && npm --prefix server install",
+    "test:frontend": "node --test src/lib/recommend.test.js",
+    "test:server": "npm --prefix server test",
+    "test": "npm run test:frontend && npm run test:server",
+    "smoke": "npm --prefix server run smoke"
+  },
+  "dependencies": {
+    "lucide-react": "^1.57.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^7.18.4"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "autoprefixer": "^10.6.1",
+    "oxlint": "^1.81.0",
+    "postcss": "^8.5.30",
+    "tailwindcss": "^3.4.19",
+    "vite": "^8.3.0"
+  }
+}

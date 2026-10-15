@@ -1,0 +1,22 @@
+{
+  "name": "cinematch-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Express backend that proxies The Movie Database (TMDB) API for CineMatch. Keeps the TMDB token server-side.",
+  "type": "module",
+  "engines": {
+    "node": ">=18.18"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "node --test",
+    "smoke": "node scripts/smoke.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.0"
+  }
+}
